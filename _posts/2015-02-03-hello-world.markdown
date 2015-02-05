@@ -5,6 +5,7 @@ subtitle:   "Seja bem vindo ao nosso blog"
 date:       2015-02-03 23:00:00
 author:     "Bruno Belarmino"
 header-img: "img/post-bg-06.jpg"
+disqus-identifier: "2015-02-03-hello-world"
 ---
 
 <p>Fala amigos!</p>
@@ -21,7 +22,7 @@ header-img: "img/post-bg-06.jpg"
 
 
 <script type="text/javascript">
-var disqus_identifier = '2015-02-03-hello-world';
+var disqus_identifier = {{ disqus-identifier }};
 var disqus_title = 'Hello World!';
 </script>
 

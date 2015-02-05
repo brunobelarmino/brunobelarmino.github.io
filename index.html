@@ -15,6 +15,7 @@ description: "Uma aventura no mundo do desenvolvimento web e mobile"
         {% endif %}
     </a>
     <p class="post-meta">
+        <i class="fa fa-clock-o"></i>
         {% assign m = post.date | date: "%-m" %}
         {{ post.date | date: "%-d" }}
         {% case m %}
@@ -32,6 +33,9 @@ description: "Uma aventura no mundo do desenvolvimento web e mobile"
           {% when '12' %}Dezembro
         {% endcase %}
         {{ post.date | date: "%Y" }}
+        &nbsp;
+        <i class="fa fa-comment"></i>
+        <span class="disqus-comment-count" data-disqus-identifier="{{ post.disqus-identifier }}"></span>
     </p>
 </div>
 <hr>
