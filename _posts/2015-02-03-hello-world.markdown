@@ -22,7 +22,7 @@ disqus-identifier: "2015-02-03-hello-world"
 
 
 <script type="text/javascript">
-var disqus_identifier = "{{ disqus-identifier }}";
+var disqus_identifier = "2015-02-03-hello-world";
 var disqus_title = 'Hello World!';
 </script>
 
