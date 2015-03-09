@@ -23,20 +23,30 @@ header-img: "img/post-bg-02.jpg"
 <h4>Set</h4>
 
 <p>
-	Para quem tem conhecimento em linguagens de programação como C#, Java, Ruby e Python esta collection não é uma novidade, mas para quem tem conhecimento somente em Javascript sim. Sendo assim, segue a definição:
+	Para quem tem conhecimento em linguagens de programação como C#, Java, Ruby e Python esta collection não é uma novidade, mas para quem tem conhecimento somente em Javascript, sim. Sendo assim, segue a definição:
 </p>
 
 <p>
-	<em>Set</em> é um tipo de collection que não permite valores duplicados. Utilizando <em>Set</em> não é possível acessar um valor como é feito com <em>Array</em>, normalmente você valida para ver se o valor está presente ou itera sobre os valores.
+	<em>Set</em> é um tipo de collection que permite a inserção de qualquer tipo de valor (Ex: objeto, function, número, string, etc) e não permite valores duplicados. Outra particularidade é que utilizando <em>Set</em> não é possível acessar um valor diretamente como é feito com <em>Array</em>, normalmente você valida para ver se o valor está presente ou itera sobre os valores.
 </p>
+
+<p>
+	Um exemplo de uso para <em>Sets</em> é uma lista de pedidos onde cada pedido do usuário deve ser único e ocasionalmente é necessário verificar se aquele pedido já esta incluso.
+</p>
+
+<p>Simples!? Vamos ver na prática a utilização do <em>Set</em>:</p>
 
 <pre>
 	<code>
-		var set = new Set(); //cria um novo Set
+		//inicialização de um Set
+		var set = new Set(); //cria um novo Set vazio
+		var set2 = new Set([1, 2, 3]); //cria um novo Set a partir de um Array
+
 		set.add(1); //adiciona um valor
 
 		//número de valores no set
 		set.size; // 1
+		set2.size; // 3
 
 		//verifica se o valor existe dentro do Set
 		set.has(1); // true
@@ -46,16 +56,17 @@ header-img: "img/post-bg-02.jpg"
 		set.has(1); // false
 		set.size; // 0
 
-		var set2 = new Set([1, 2, 3]); //cria um novo Set a partir de um Array
-
-		set2.size; // 3
-
 		//itera sobre os valores do Set
 		for (let valor of set2) {
 		  console.log(valor);
 		}
 
-		//o código acima tem o output: 
+		//itera sobre os valores do Set
+		set2.forEach(function(valor) {
+		  console.log(valor); 
+		});
+
+		//output das iterações: 
 		// 1
 		// 2
 		// 3
