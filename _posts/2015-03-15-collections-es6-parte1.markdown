@@ -2,10 +2,10 @@
 layout:     post
 title:      "Collections ES6 parte 1"
 subtitle:   "Novas estruturas de dados do Javascript"
-date:       2015-03-09 09:00:00
+date:       2015-03-15 16:30:00
 author:     "Bruno Belarmino"
 header-img: "img/post-bg-02.jpg"
-# disqus-identifier: "2015-03-09-collections-es6-parte1"
+disqus-identifier: "2015-03-15-collections-es6-parte1"
 ---
 
 <p>Fala Amigos!</p>
@@ -51,6 +51,10 @@ header-img: "img/post-bg-02.jpg"
 		//verifica se o valor existe dentro do Set
 		set.has(1); // true
 
+		set.add(1); //adiciona um valor duplicado e nada acontece
+
+		set.size; // 1
+
 		set.delete(1); //remove um determinado valor do Set
 
 		set.has(1); // false
@@ -75,3 +79,36 @@ header-img: "img/post-bg-02.jpg"
 		set2.size; // 0
 	</code>
 </pre>
+
+<br/>
+<h4>WeakSet</h4>
+
+<p>
+	É um <em>Set</em> que não previne que seus elementos/valores sejam coletados pelo garbage collector do Javascript.
+	Além disso a sua api também é reduzida. Deste modo, não é permitido iterar sobre os valores do <em>Set</em> e/ou limpar os mesmos usando o método <em>clear</em>.
+</p>
+
+<p>
+	Na prática, caso você utilize um objeto como valor do seu <em>WeakSet</em> e o mesmo não estiver sendo usado em mais nenhum lugar na sua aplicação, o garbage collector poderá limpar a sua referência e com isso magicamente o valor deixaria de existir.
+</p>
+
+<p>
+	A api do <em>WeakSet</em> é composta de apenas 3 métodos quais funcionam da mesma forma que o <em>Set</em>:
+</p>
+
+<ul>
+	<li>add(valor)</li>
+	<li>has(valor)</li>
+	<li>delete(valor)</li>
+</ul>
+
+<p>
+	Até a próxima!
+</p>
+
+<script type="text/javascript">
+var disqus_identifier = "2015-03-15-collections-es6-parte1";
+var disqus_title = 'Collections ES6 parte 1';
+</script>
+
+{% include comments.html %}
