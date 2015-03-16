@@ -74,10 +74,10 @@ disqus-identifier: "2015-03-07-iterators-es6"
 <h4>Legal! Mas e onde eu uso isso?</h4>
 
 <p>
-	Iterator é uma peça fundamental na nova forma de manipular coleções de dados no ES6. Sendo asim todos os tipos de coleções (<em>Arrays</em>, <em>Sets</em>, <em>Maps</em> e <em>Strings</em>) já vem com essa interface implementada.
+	Iterator é uma peça fundamental na nova forma de manipular coleções de dados no ES6. Sendo assim todos os tipos de coleções (<em>Arrays</em>, <em>Sets</em>, <em>Maps</em> e até mesmo <em>Strings</em>) já vem com essa interface implementada. Liberando novas formas de interação com esses objetos.
 </p>
 <p>
-	Além disso um bom entendimento sobre iterators irá te dar uma base solida e te ajudar muito no entendimento de outras features do ES6. Assim como <em>collections</em>, <em>for of</em> e <em>generators</em> que serão assuntos dos próximos posts da série.  
+	Além disso um bom entendimento sobre iterators irá te dar uma base sólida e te ajudar muito no entendimento de outras features do ES6. Assim como <em>collections</em>, <em>for of</em> e <em>generators</em> que serão assuntos dos próximos posts da série.  
 </p>
 <p>
 	Até a próxima!
