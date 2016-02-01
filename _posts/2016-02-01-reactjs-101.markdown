@@ -17,7 +17,7 @@ disqus-identifier: "2016-02-01-reactjs-101"
 <h4>TL;DR</h4>
 
 <p>
-	ReactJS é a biblioteca criada pelo Facebook para criação de interfaces. Pensando no mundo <strong>MV*</strong> qual vivenciamos hoje, este seria o <strong>V</strong>.
+	ReactJS é a biblioteca criada pelo Facebook para criação de interfaces. Pensando no mundo <strong>MV*</strong> qual vivenciamos hoje, este seria o <strong>V</strong> (view).
 </p>
 
 <p>
@@ -107,6 +107,12 @@ ReactDOM.render(customDiv, document.getElementById('container'));
 	 Com o <em>virtual DOM</em> esses problemas são minimizados com a técnica conhecida como  "o menos é mais", ou seja, toda vez que algo é alterado nos <em>elements</em> que foram criados através do método React.createElement. O ReactJS renderiza esse conteúdo no <em>virtual DOM</em> e através de um algoritmo super otimizado calcula a diferença entre o DOM atual e o DOM com as alterações e são essas diferenças que são renderizadas no DOM original. E desta forma causa o mínimo de impacto possível fazendo com que nossas páginas estejam sempre responsivas e rápidas para o usuário.
 </p>
 
+<h4>Conclusão</h4>
+
+<p>
+	ReactJS é uma nova opção para criação de interfaces focada na simplidade de desenvolvimento e alta performance. Com baixo consumo de memória e um gerenciamento eficiente do DOM esta biblioteca vem ganhando o mundo.
+</p>
+
 <p>
 	Por hoje é isso!
 	<br>
@@ -116,6 +122,8 @@ ReactDOM.render(customDiv, document.getElementById('container'));
 <h5>Links de referência:</h5>
 <p>
 	- <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction">DOM (Document Object Model)</a>
+	<br>
+	- <a target="_blank" href="https://developers.google.com/speed/articles/reflow">Reflow</a>
 	<br>
 	- <a target="_blank" href="https://facebook.github.io/react/docs/getting-started.html">ReactJS</a>
 </p>
