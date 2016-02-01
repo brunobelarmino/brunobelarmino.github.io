@@ -39,7 +39,7 @@ disqus-identifier: "2016-02-01-reactjs-101"
 <h5>Elements</h5>
 
 <p>
-	Elemento é a instância de um <em>component</em>. Por exemplo quando inserimos um <em>button</em> em uma página HTML, este elemento é a materialização/instância de um componente no DOM.
+	<em>Element</em> é a instância de um <em>component</em>. Por exemplo quando inserimos um <em>button</em> em uma página HTML, este elemento é a materialização/instância de um componente no DOM.
 </p>
 
 <p>Complicado?</p>
@@ -50,25 +50,26 @@ disqus-identifier: "2016-02-01-reactjs-101"
 
 <pre>
 <code>
+//cria elemento
 var customDiv = React.createElement('div');
 
+//renderiza elemento
 ReactDOM.render(customDiv, document.getElementById('container'));
 </code>
 </pre>
 
 <p>
 	O código acima cria um <em>element</em> baseado no <em>component</em> div e renderiza o mesmo no DOM.
-	O ReactJS vem com um <a target="_blank" href="https://facebook.github.io/react/docs/tags-and-attributes.html#html-elements">set de <em>components</em></a> HTML prontos para o uso.
 </p>
 
 <p>
 	Legal! Mas usar diretamente o HTML não é mais eficiente?
 	<br>
-	A resposta é não.
+	A resposta é: normalmente não.
 </p>
 
 <p>
-	Eis que lhes apresento o <em>Virtual DOM</em>.
+	E Eis que lhes apresento o <em>Virtual DOM</em>.
 </p>
 
 <h4>Virtual DOM</h4>
@@ -99,16 +100,26 @@ ReactDOM.render(customDiv, document.getElementById('container'));
 </ol>
 
 <p>
-	Agora imagine tudo isso acontecendo em uma página com centenas ou talvez milhares de <em>elements</em> no DOM. Não é uma expriência muito boa.
+	Agora imagine tudo isso acontecendo em uma página com centenas ou talvez milhares de <em>elements</em> no DOM. Não é uma experiência muito boa.
 </p>
 
 <p>
-	 Com o <em>virtual DOM</em> esses problemas são minimizados com a tecnica conhecida como  "o menos é mais", ou seja, toda vez que algo é alterado nos <em>elements</em> que foram criados através do método React.createElement. O ReactJS renderiza esse conteúdo no <em>virtual DOM</em> e através de um algoritmo super otimizado calcula a diferença entre o DOM atual e o DOM com as alterações e são essas diferenças que são renderizadas no DOM original. E desta forma causa o mínimo de impacto possível fazendo com que nossas páginas estejam sempre responsivas e rápidas para o usuário.
+	 Com o <em>virtual DOM</em> esses problemas são minimizados com a técnica conhecida como  "o menos é mais", ou seja, toda vez que algo é alterado nos <em>elements</em> que foram criados através do método React.createElement. O ReactJS renderiza esse conteúdo no <em>virtual DOM</em> e através de um algoritmo super otimizado calcula a diferença entre o DOM atual e o DOM com as alterações e são essas diferenças que são renderizadas no DOM original. E desta forma causa o mínimo de impacto possível fazendo com que nossas páginas estejam sempre responsivas e rápidas para o usuário.
 </p>
 
 <p>
-	Por hoje é isso! Esperam que tenham gostado dessa introdução e até a próxima!
+	Por hoje é isso!
+	<br>
+	Espero que tenham gostado dessa introdução e até a próxima!
 </p>
+
+<h5>Links de referência:</h5>
+<p>
+	- <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction">DOM (Document Object Model)</a>
+	<br>
+	- <a target="_blank" href="https://facebook.github.io/react/docs/getting-started.html">ReactJS</a>
+</p>
+		
 
 <script type="text/javascript">
 var disqus_identifier = "2016-02-01-reactjs-101";
