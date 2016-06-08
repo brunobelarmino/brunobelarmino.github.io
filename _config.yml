@@ -10,5 +10,6 @@ github_username:  brunobelarmino
 markdown: kramdown
 highlighter: pygments
 permalink: /:year/:month/:day/:title
+gems: [jekyll-paginate]
 paginate: 5
 exclude: ["Readme.md", "Gemfile", "Gemfile.lock", "CNAME", "_followup"]
